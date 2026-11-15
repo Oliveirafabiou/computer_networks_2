@@ -1,0 +1,78 @@
+======================================================================
+TESTE DE CONSISTENCIA
+======================================================================
+Mensagem: "Redes de Computadores - Unisinos 2026/2 - Trabalho II"
+Tamanho: 53 caracteres = 424 bits
+Primeiros 16 bits: 0101001001100101  ('Re')
+
+1) Canal ideal (sem ruido)
+  NRZ        + BPSK  : erros =   0   BER = 0.0000   OK
+  NRZ        + QPSK  : erros =   0   BER = 0.0000   OK
+  NRZ        + 16-QAM: erros =   0   BER = 0.0000   OK
+  NRZ-I      + BPSK  : erros =   0   BER = 0.0000   OK
+  NRZ-I      + QPSK  : erros =   0   BER = 0.0000   OK
+  NRZ-I      + 16-QAM: erros =   0   BER = 0.0000   OK
+  Manchester + BPSK  : erros =   0   BER = 0.0000   OK
+  Manchester + QPSK  : erros =   0   BER = 0.0000   OK
+  Manchester + 16-QAM: erros =   0   BER = 0.0000   OK
+
+2) Canal AWGN com SNR alta (30 dB)
+  NRZ        + BPSK  : erros =   0   BER = 0.0000   OK
+  NRZ        + QPSK  : erros =   0   BER = 0.0000   OK
+  NRZ        + 16-QAM: erros =   0   BER = 0.0000   OK
+  NRZ-I      + BPSK  : erros =   0   BER = 0.0000   OK
+  NRZ-I      + QPSK  : erros =   0   BER = 0.0000   OK
+  NRZ-I      + 16-QAM: erros =   0   BER = 0.0000   OK
+  Manchester + BPSK  : erros =   0   BER = 0.0000   OK
+  Manchester + QPSK  : erros =   0   BER = 0.0000   OK
+  Manchester + 16-QAM: erros =   0   BER = 0.0000   OK
+
+Resultado: mensagem recuperada sem erros nas 18 execucoes.
+
+======================================================================
+DEMONSTRACAO COM RUIDO (identificacao dos bits incorretos)
+======================================================================
+  NRZ + BPSK, canal AWGN, SNR = 6 dB
+    enviada : Redes de Computadores - Unisinos 2026/2 - Trabalho II
+    recebida: Redes $e Computadore3 -(Unisinos 2026/2 - Trabalho II
+    bits errados: 3 de 424  (BER = 0.0071)
+    posicoes dos bits errados (ate 20): [49, 161, 188]
+    caracteres afetados: 3 de 53
+
+  NRZ + QPSK, canal AWGN, SNR = 6 dB
+    enviada : Redes de Computadores - Unisinos 2026/2 - Trabalho II
+    recebida: Redes d% CoePutado2es - Unisinos(0r26/2 ? Traba?ho II
+    bits errados: 10 de 424  (BER = 0.0236)
+    posicoes dos bits errados (ate 20): [57, 92, 98, 145, 260, 270, 273, 278, 322, 376]
+    caracteres afetados: 9 de 53
+
+  NRZ + 16-QAM, canal AWGN, SNR = 6 dB
+    enviada : Redes de Computadores - Unisinos 2026/2 - Trabalho II
+    recebida: R/der0de!BnlT|5'|mrwc$=`??irh?'2$20"vo"am?Pr`r!hh& ??
+    bits errados: 61 de 424  (BER = 0.1439)
+    posicoes dos bits errados (ate 20): [9, 12, 14, 39, 43, 71, 79, 87, 95, 98, 101, 108, 111, 113, 119, 121, 125, 126, 131, 132]
+    caracteres afetados: 41 de 53
+
+  NRZ-I + QPSK, canal AWGN, SNR = 6 dB
+    enviada : Redes de Computadores - Unisinos 2026/2 - Trabalho II
+    recebida: Redes e? Couputado?es -#Unipinos,1026/2 -?Tr`?a?ho@II
+    bits errados: 22 de 424  (BER = 0.0519)
+    posicoes dos bits errados (ate 20): [55, 56, 91, 92, 145, 146, 190, 191, 222, 223, 260, 261, 270, 271, 328, 329, 359, 360, 376, 377]
+    caracteres afetados: 13 de 53
+
+  Manchester + QPSK, canal AWGN, SNR = 6 dB
+    enviada : Redes de Computadores - Unisinos 2026/2 - Trabalho II
+    recebida: Redes0de!Cnmputadgres , Unisynor 2826/6!- Trabalho YI
+    bits errados: 11 de 424  (BER = 0.0259)
+    violacoes do Manchester detectadas: 27
+    posicoes dos bits errados (ate 20): [43, 71, 87, 140, 183, 227, 255, 276, 309, 319, 411]
+    caracteres afetados: 11 de 53
+
+  NRZ + QPSK, canal Rajadas, SNR = 20 dB, mensagem repetida 40 vezes
+    bits errados: 121 de 16960  (BER = 0.0071)
+    copia  0: Redes de Cme`7tP?oRg?`? Unisinos 2026/2 - Trabalho II
+    copia  6: Redes de Computadores - Unisinos0202./2%%?Xpabalho II
+    copia  7: Redes de Computadores - Unisinos 2026/2 - Trabalho?[Y
+    copias com erro: 10 de 40
+    posicoes dos bits errados (ate 20): [86, 92, 99, 105, 110, 122, 123, 127, 128, 131, 133, 146, 158, 160, 165, 167, 169, 178, 179, 2803]
+

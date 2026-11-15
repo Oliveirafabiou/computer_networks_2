@@ -1,0 +1,36 @@
+{
+    "n_bits": 100000,
+    "n_repeticoes": 5,
+    "semente_base": 2026,
+    "snrs_db": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+    ],
+    "codigos_de_linha": [
+        "NRZ",
+        "NRZ-I",
+        "Manchester"
+    ],
+    "modulacoes": [
+        "BPSK",
+        "QPSK",
+        "16-QAM"
+    ],
+    "canais": [
+        "AWGN",
+        "Rajadas"
+    ],
+    "rajada_prob_inicio": 0.001,
+    "rajada_tamanho": 50,
+    "rajada_potencia": 1.0,
+    "definicao_snr": "potencia media do sinal / potencia do ruido, por simbolo"
+}

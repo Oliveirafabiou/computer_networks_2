@@ -1,0 +1,4 @@
+modulacao,bits_por_simbolo,eficiencia_bits_s_hz,ber_awgn_6dB,ber_awgn_10dB,ber_awgn_14dB,ber_awgn_20dB,snr_min_para_ber_1e-3_dB,ber_rajadas_20dB
+BPSK,1,1.0,0.002234,4.000000000000001e-06,0.0,0.0,8,0.004168
+QPSK,2,2.0,0.022714,0.000772,0.0,0.0,10,0.008634
+16-QAM,4,4.0,0.140968,0.059748,0.009304,0.0,18,0.015127999999999999
