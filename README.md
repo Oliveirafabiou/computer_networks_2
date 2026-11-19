@@ -5,7 +5,7 @@ Prof. Cristiano Bonato Both
 
 **Dupla:** Fábio Silveira e Pedro Scott
 
-**Vídeo de demonstração:** _(colocar aqui o link ou o arquivo do vídeo, máximo 5 minutos)_
+**Vídeo de demonstração:** _(PLACEHOLDER ENQUANTO GRAVAMOS)_
 
 ## 1. O que o trabalho faz
 
@@ -266,9 +266,8 @@ símbolo na mesma banda, é preciso uma SNR maior.
 
 ## 9. Divisão de responsabilidades
 
-_(Preencher com a divisão real da dupla. Sugestão de formato:)_
-
 | Integrante | Responsabilidades |
 | --- | --- |
-| Fábio Silveira | _(preencher)_ |
-| _(colega)_ | _(preencher)_ |
+| Fábio Silveira | Conversão ASCII ↔ bits; codificações de linha (NRZ, NRZ-I e Manchester) e detecção de violações; canal com rajadas; teste de consistência e demonstração com a mensagem (`teste_consistencia.py`) |
+| Pedro Scott | Modulações e demodulação (BPSK, QPSK e 16-QAM com código Gray); canal AWGN; métricas (BER e eficiência espectral); plano experimental (`experimentos.py`); gráficos, curvas teóricas e tabelas (`graficos.py`) |
+| Ambos | Definição do plano experimental, análise dos resultados, redação do README, gravação do vídeo e apresentação |
